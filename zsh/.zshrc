@@ -75,10 +75,47 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
+
+# Listing
 alias ls='ls --color'
+alias ll='ls -la --color'
+alias l.='ls -d .* --color'
+
+# Safety
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# Git
+alias gst='git status'
+alias ga='git add'
+alias gau='git add -u'
+alias gaa='git add --all'
+alias gcm='git commit -m'
+alias gcu='git commit -m "updated"'
+alias gca='git commit -m "added"'
+alias gcd='git commit -m "deleted"'
+alias gl='git pull'
+alias gp='git push'
+alias gi='git init'
+alias gc='git clone'
+alias gbr='git branch'
+alias gco='git checkout'
+alias grr='git remote rm'
+alias gra='git remote add'
+alias glog='git log'
+alias grsu='git remote set-url --add --push'
+
+# Terminal
+alias :c="clear"
+alias :q="exit"
+alias :="clear && cd $HOME"
+alias up='cd ..'
+alias upup='cd ../..'
+alias upupup='cd ../../..'
+
+# Misc 
 alias vim='nvim'
-alias :c='clear'
-alias :q='exit'
 
 # Shell integrations
 eval "$(fzf --zsh)"
