@@ -129,7 +129,7 @@ multiplier = 3
 [window]
 decorations = "full"
 dynamic_title = true
-opacity = 0.9
+opacity = 0.8
 title = "Alacritty"
 
 [window.dimensions]
