@@ -1,2 +1,2 @@
 #!/bin/sh
-sudo pacman -S neovim stow copyq fd zsh
+sudo pacman -S --needed neovim stow copyq fd zsh waybar rofi alacritty
