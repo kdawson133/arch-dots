@@ -54,7 +54,8 @@ bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 bindkey '^[w' kill-region
 bindkey '^[[3~' delete-char
-bindkey '^[[H' home-char
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
 # History
 HISTSIZE=5000
 HISTFILE=~/.zsh_history
