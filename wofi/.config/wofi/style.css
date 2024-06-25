@@ -1,0 +1,30 @@
+* {
+    border-radius: 3px;
+    border: none;
+}
+window {
+    font-size: 24px;
+    font-family: "Hasklug Nerd Font Mono";
+    background-color: rgba(59, 66, 82, 0.9);
+    color: rgba(229, 233, 240, 1);
+    border-bottom: 3px solid white;
+}
+
+#entry{
+    padding: 0.25em;
+}
+#entry:selected {
+    background-color: #81A1C1;
+    color: white; 
+}
+
+#text:selected {
+    background-color: #81A1C1;
+    color: #333333;
+}
+
+#input{
+    background-color: rgba(46, 52, 64, 0.9);
+    color: white;
+    padding: 0.25em;
+}
