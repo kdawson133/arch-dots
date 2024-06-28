@@ -10,7 +10,7 @@ end)
 
 -- This will hold the configuration.
 local config = wezterm.config_builder()
-
+config.enable_wayland = true
 -- This is where you actually apply your config choices
 config.inactive_pane_hsb = {
     saturation = 0.5,
@@ -21,7 +21,10 @@ local image_file = wezterm.home_dir .. '/.config/wezterm/image.jpg'
 
 -- For example, changing the color scheme:
 config.color_scheme = 'nord'
-config.font = wezterm.font('Hasklug Nerd Font Mono')
+config.font = wezterm.font_with_fallback({
+    'Fira Code',
+    'Symbols Nerd Font Mono',
+})
 config.font_size = 22
 config.line_height = 0.8
 
